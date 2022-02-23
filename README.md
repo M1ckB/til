@@ -26,6 +26,6 @@ This idea about documenting your learning publicly is inspired by Josh Branchaud
 
 ## License
 
-&copy; 2022 Mick Ahlmann Brun
+&copy; 2022-2022 Mick Ahlmann Brun
 
 This repository is licensed under the MIT license. See [LICENSE](LICENSE) for details.
