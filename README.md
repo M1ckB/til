@@ -6,11 +6,16 @@ A collection of small things I learn on a day-to-day basis using different progr
 
 Table of contents:
 - [Categories](#categories)
+  - [Python](#python)
+  - [T-SQL](#t-sql)
 - [About](#about)
 - [License](#license)
 
 ## Categories
 
+### Python
+
+### T-SQL
 
 ## About
 
