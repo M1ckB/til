@@ -18,7 +18,8 @@ Table of contents:
 
 ### T-SQL
 
-- [Backup and restore](T-SQL/backup-and-restore.md)
+- [Backup and Restore](T-SQL/backup-and-restore.md)
+- [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
 
 ## About
 
