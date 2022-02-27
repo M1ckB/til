@@ -20,6 +20,7 @@ Table of contents:
 
 - [Backup and Restore](T-SQL/backup-and-restore.md)
 - [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
+- [Update Statistics](T-SQL/update-statistics.md)
 
 ## About
 
