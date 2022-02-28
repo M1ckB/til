@@ -2,7 +2,7 @@
 
 SQL Server has a dedicated Dynamic Management View (DMV) that shows index fragmentation: `sys.dm_db_index_physical_stats`. It can uncover both *external  fragmentation* (also called logical fragmentation) and *internal fragmentation* (also called page density).
 
-Run the following query to get an overview of tables/indexes that has 1.000 pages or more and some degree of fragmentation:
+Run the following query to get an overview of indexes that has 1.000 pages or more and some degree of fragmentation:
 
 ``` sql
 SELECT
