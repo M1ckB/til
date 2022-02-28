@@ -19,6 +19,7 @@ Table of contents:
 ### T-SQL
 
 - [Backup and Restore](T-SQL/backup-and-restore.md)
+- [Index Fragmentation](T-SQL/index-fragmentation.md)
 - [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
 - [Update Statistics](T-SQL/update-statistics.md)
 
