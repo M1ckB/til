@@ -9,6 +9,7 @@ SELECT
 	s.[name] AS [schema],
 	t.[name] AS  [table],
 	i.[name] AS [index],
+	ddips.[index_type_desc] AS indexType,
 	ddips.avg_fragmentation_in_percent, -- External fragmentation
 	ddips.avg_page_space_used_in_percent, -- Internal fragmentation
 	ddips.page_count
