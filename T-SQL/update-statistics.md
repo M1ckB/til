@@ -27,4 +27,4 @@ Updating statistics will potentially cause SQL Server to traverse a table many t
 
 Generally, updating statistics should be left for SQL Server to do automatically or be part of a maintenance plan.
 
-For more information, check out Microsoft's [documentation](https://docs.microsoft.com/en-us/sql/t-sql/statements/update-statistics-transact-sql?view=sql-server-ver15).
+For more information, check out [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/t-sql/statements/update-statistics-transact-sql?view=sql-server-ver15).
