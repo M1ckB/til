@@ -22,4 +22,4 @@ AND ddips.avg_fragmentation_in_percent > 0
 ORDER BY ddips.avg_fragmentation_in_percent DESC;
 ```
 
-For more information, check out SQLShack's [article](https://www.sqlshack.com/sql-index-maintenance/) or Microsoft's [documentation](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver15).
+For more information, check out [SQLShack's article](https://www.sqlshack.com/sql-index-maintenance/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver15).
