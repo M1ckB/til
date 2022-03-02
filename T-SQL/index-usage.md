@@ -33,12 +33,22 @@ SELECT
 	ixos.leaf_update_count numberOfUpdates,
 	ixos.leaf_delete_count numberOfDeletes
 FROM sys.indexes AS ix
-INNER JOIN sys.dm_db_index_usage_stats AS ixus ON ixus.index_id = ix.index_id AND ixus.[OBJECT_ID] = ix.[OBJECT_ID]
-INNER JOIN sys.dm_db_index_operational_stats (NULL, NULL, NULL, NULL) AS ixos ON ixos.index_id = ix.index_id AND ixos.[OBJECT_ID] = ix.[OBJECT_ID]
+INNER JOIN sys.dm_db_index_usage_stats AS ixus
+	ON ixus.index_id = ix.index_id
+	AND ixus.[OBJECT_ID] = ix.[OBJECT_ID]
+INNER JOIN sys.dm_db_index_operational_stats (NULL, NULL, NULL, NULL) AS ixos
+	ON ixos.index_id = ix.index_id
+	AND ixos.[OBJECT_ID] = ix.[OBJECT_ID]
 INNER JOIN pages AS ps on ps.[OBJECT_ID] = ix.[OBJECT_ID]
 WHERE OBJECTPROPERTY(ix.[OBJECT_ID], 'IsUserTable') = 1;
 ```
 
-Keep in mind that the statistics are flushed when the SQL Server service is restarted.
+Rules of thumb:
+- An index with usage stats containing many zero values means that the index isn't being used (very much) and the gain of having it is small. Moreover, if the index is being modified a lot means that the cost of maintaining the index is relatively big. This makes the index a good candidate for being dropped
+- An index that is *scanned* a lot but only has few *seeks* is not used properly and should be replaced
+- An index with a large number of *lookups* means that the index should be altered to include the most frequently looked up columns
+- A clustered index with a large number of *scans* means that it can be efficient to create a non-clustered index to cover the queries (unless the table is small)
+
+**Keep in mind that the statistics are flushed when the SQL Server service is restarted.**
 
 See [SQLShack's article](https://www.sqlshack.com/gathering-sql-server-indexes-statistics-and-usage-information/) or Microsoft's documentation on [index usage stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-usage-stats-transact-sql?view=sql-server-ver15) or [index operational stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-operational-stats-transact-sql?view=sql-server-ver15) for more information.
