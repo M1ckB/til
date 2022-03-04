@@ -21,7 +21,7 @@ FROM sys.dm_db_missing_index_groups AS h
 INNER JOIN sys.dm_db_missing_index_group_stats AS s ON s.group_handle = h.index_group_handle
 INNER JOIN sys.dm_db_missing_index_details AS d ON d.index_handle = h.index_handle
 INNER JOIN sys.databases AS db ON db.database_id = d.database_id
-ORDER BY (userSeeks + userScans) DESC;
+ORDER BY (s.user_seeks + s.user_scans) DESC;
 ```
 
 **Keep in mind that the statistics are flushed when the SQL Server service is restarted.** Therefore, the data about missing indexes should be gathered regularly and be persisted in a table.
