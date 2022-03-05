@@ -18,6 +18,6 @@ DBCC CHECKDB('AdventureWorks');
 
 The DBCC command comes with a set of repair options but these should be used as a last resort. Instead, the last good backup should be used.
 
-The integrity of a database should be checked regularly to make sure that corruption is detected while there is still a good backup around.
+Generally, the integrity of a database should be checked regularly to make sure that corruption is detected while there is still a good backup around.
 
 See [MSSQLTip's article](https://www.mssqltips.com/sqlservertip/4381/sql-server-dbcc-checkdb-overview/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver15) for more information.
