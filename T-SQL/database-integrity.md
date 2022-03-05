@@ -1,6 +1,6 @@
 # Database Integrity
 
-SQL Server has a Database Console Commands (DBCC) that checks the physical and logical integrity of all the objects in a database. This can be used to detect *storage corruption*.
+SQL Server has a Database Console Command (DBCC) that checks the physical and logical integrity of all objects in a database. This can be used to detect *storage corruption*.
 
 Use the query below to see when the last integrity check was run on e.g. the database `AdventureWorks`:
 
