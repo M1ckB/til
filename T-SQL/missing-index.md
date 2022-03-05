@@ -6,17 +6,17 @@ The following query will retrieve information about missing indexes:
 
 ``` sql
 SELECT
-    db.[name] AS [database],
-    d.statement AS [table],
-    d.equality_columns AS equalityColumns,
-    d.inequality_columns AS inequalityColumns,
-    d.included_columns AS includeColumns,
-    s.user_seeks AS userSeeks, -- Number of seeks that the missing index could have been used for
-    s.user_scans AS userScans, -- Number of scans that the missing index could have been used for
-    s.last_user_seek AS lastUserSeek,
-    s.last_user_scan AS lastUserScan,
-    s.avg_total_user_cost AS avgUserCost, -- Average cost of the user queries that could be reduced by the index
-    s.Avg_User_Impact as avgUserImpact -- Average percentage benefit that user queries could experience from implementing the missing index
+    db.[name] AS [database],
+    d.statement AS [table],
+    d.equality_columns AS equalityColumns,
+    d.inequality_columns AS inequalityColumns,
+    d.included_columns AS includeColumns,
+    s.user_seeks AS userSeeks, -- Number of seeks that the missing index could have been used for
+    s.user_scans AS userScans, -- Number of scans that the missing index could have been used for
+    s.last_user_seek AS lastUserSeek,
+    s.last_user_scan AS lastUserScan,
+    s.avg_total_user_cost AS avgUserCost, -- Average cost of the user queries that could be reduced by the index
+    s.Avg_User_Impact as avgUserImpact -- Average percentage benefit that user queries could experience from implementing the missing index
 FROM sys.dm_db_missing_index_groups AS h
 INNER JOIN sys.dm_db_missing_index_group_stats AS s ON s.group_handle = h.index_group_handle
 INNER JOIN sys.dm_db_missing_index_details AS d ON d.index_handle = h.index_handle

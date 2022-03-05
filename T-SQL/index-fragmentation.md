@@ -6,13 +6,13 @@ Run the following query to get an overview of indexes that has 1.000 pages or mo
 
 ``` sql
 SELECT
-	s.[name] AS [schema],
-	t.[name] AS  [table],
-	i.[name] AS [index],
-	ddips.[index_type_desc] AS indexType,
-	ddips.avg_fragmentation_in_percent, -- External fragmentation
-	ddips.avg_page_space_used_in_percent, -- Internal fragmentation
-	ddips.page_count
+    s.[name] AS [schema],
+    t.[name] AS  [table],
+    i.[name] AS [index],
+    ddips.[index_type_desc] AS indexType,
+    ddips.avg_fragmentation_in_percent, -- External fragmentation
+    ddips.avg_page_space_used_in_percent, -- Internal fragmentation
+    ddips.page_count
 FROM sys.dm_db_index_physical_stats (DB_ID(), NULL, NULL, NULL, 'SAMPLED') AS ddips
 INNER JOIN sys.tables t ON t.object_id = ddips.object_id
 INNER JOIN sys.schemas s ON s.schema_id = t.schema_id
