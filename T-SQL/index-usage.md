@@ -2,7 +2,7 @@
 
 SQL Server has two Dynamic Management Views (DMVs) that track the usage of indexes. These are a great help to determine if indexes are being used efficiently or should be modified or dropped.
 
-While there are a lot of useful statistics in the DMVs, the query below only includes the most fundamental ones:
+While there are a lot of useful statistics in the DMVs, the query below only includes the most fundamental ones for the current database:
 
 ``` sql
 WITH pages AS (
@@ -33,14 +33,11 @@ SELECT
     ixos.leaf_update_count numberOfUpdates,
     ixos.leaf_delete_count numberOfDeletes
 FROM sys.indexes AS ix
-INNER JOIN sys.dm_db_index_usage_stats AS ixus
-    ON ixus.index_id = ix.index_id
-    AND ixus.[OBJECT_ID] = ix.[OBJECT_ID]
-INNER JOIN sys.dm_db_index_operational_stats (NULL, NULL, NULL, NULL) AS ixos
-    ON ixos.index_id = ix.index_id
-    AND ixos.[OBJECT_ID] = ix.[OBJECT_ID]
+INNER JOIN sys.dm_db_index_usage_stats AS ixus ON ixus.index_id = ix.index_id AND ixus.[OBJECT_ID] = ix.[OBJECT_ID]
+INNER JOIN sys.dm_db_index_operational_stats (DB_ID(), NULL, NULL, NULL) AS ixos ON ixos.index_id = ix.index_id AND ixos.[OBJECT_ID] = ix.[OBJECT_ID]
 INNER JOIN pages AS ps on ps.[OBJECT_ID] = ix.[OBJECT_ID]
-WHERE OBJECTPROPERTY(ix.[OBJECT_ID], 'IsUserTable') = 1;
+WHERE OBJECTPROPERTY(ix.[OBJECT_ID], 'IsUserTable') = 1
+ORDER BY (ixus.user_seeks + ixus.user_scans + ixus.user_lookups);
 ```
 
 Rules of thumb:
