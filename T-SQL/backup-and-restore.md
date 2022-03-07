@@ -6,14 +6,14 @@ To create a full backup of a database (e.g. `myDb`) on SQL Server, the following
 
 ``` sql
 BACKUP DATABASE myDb
-TO DISK = "location/myDb.bak";
+TO DISK = 'location\myDb.bak';
 ```
 
 The log can be backed up with the following command:
 
 ``` sql
 BACKUP LOG myDb
-TO DISK = "location/myDb.log";
+TO DISK = 'location\myDb.log';
 ```
 
 Options can be added by adding `WITH` at the end of the statement and separating options using comma as delimiter. Some especially useful options are:
@@ -34,21 +34,21 @@ Get an overview of a stacked file using the following command:
 
 ``` sql
 RESTORE FILELISTONLY
-FROM DISK = "location/myDb.bak";
+FROM DISK = 'location\myDb.bak';
 ```
 
 Further details can be found using:
 
 ``` sql
 RESTORE HEADERONLY
-FROM DISK = "location/myDb.bak";
+FROM DISK = 'location\myDb.bak';
 ```
 
 When restoring a full backup (with file names matching the `.mdf` and `.ldf` files of the destination database), use:
 
 ``` sql
 RESTORE DATABASE myDb
-FROM DISK = "location/myDb.bak"
+FROM DISK = 'location\myDb.bak'
 WITH REPLACE;
 ````
 
@@ -60,7 +60,7 @@ Restore transaction log backups using:
 
 ``` sql
 RESTORE LOG myDb
-FROM DISK = "location/myDb.log";
+FROM DISK = 'location\myDb.log';
 ```
 
 **If a file has been stacked, individual backups can be selected using the `FILE` option entering the position of the desired file.**
