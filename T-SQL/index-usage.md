@@ -17,7 +17,7 @@ WITH pages AS (
 SELECT
     OBJECT_NAME(ix.OBJECT_ID) AS [table],
     ix.[name] AS [index],
-    ix.[type_desc] indexType,
+    ix.[type_desc] AS indexType,
     ps.[used_page_count] AS indexPages,
     -- Usage stats
     ixus.user_seeks AS numberOfSeeks,
@@ -29,9 +29,9 @@ SELECT
     ixus.last_user_lookup AS lastLookup,
     ixus.last_user_update AS lastModificationOperation,
     -- Operational stats
-    ixos.leaf_insert_count numberOfInserts,
-    ixos.leaf_update_count numberOfUpdates,
-    ixos.leaf_delete_count numberOfDeletes
+    ixos.leaf_insert_count AS numberOfInserts,
+    ixos.leaf_update_count AS numberOfUpdates,
+    ixos.leaf_delete_count AS numberOfDeletes
 FROM sys.indexes AS ix
 INNER JOIN sys.dm_db_index_usage_stats AS ixus ON ixus.database_id = DB_ID() AND ixus.index_id = ix.index_id AND ixus.[OBJECT_ID] = ix.[OBJECT_ID]
 INNER JOIN sys.dm_db_index_operational_stats (DB_ID(), NULL, NULL, NULL) AS ixos ON ixos.index_id = ix.index_id AND ixos.[OBJECT_ID] = ix.[OBJECT_ID]
