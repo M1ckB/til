@@ -12,7 +12,10 @@ When learning about T-SQL and SQL Server in general, the following list of resou
   - [Paul White](https://www.sql.kiwi/)
 - Documentation:
   - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15)
-- Sites:
-  - [DBA Stack Exchange](https://dba.stackexchange.com/)
+- Community sites:
+  - [MSSQLTips](https://www.mssqltips.com/)
   - [Red Gate](https://www.red-gate.com/simple-talk/)
+  - [SQL Server Central](https://www.sqlservercentral.com/)
   - [SQLShack](https://www.sqlshack.com/)
+- Q&A:
+  - [DBA Stack Exchange](https://dba.stackexchange.com/)
