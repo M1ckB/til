@@ -75,3 +75,5 @@ WITH RECOVERY;
 ## Source
 
 See [Grant Fritchey's video](https://www.youtube.com/watch?v=ITXPTviK2dQ) or read Microsoft's documentation on [backup](https://docs.microsoft.com/en-us/sql/t-sql/statements/backup-transact-sql?view=sql-server-ver15) and [restore](https://docs.microsoft.com/en-us/sql/t-sql/statements/restore-statements-transact-sql?view=sql-server-ver15) statements for more information.
+
+For a ready-made, good and free maintenance solution, see [Ola Hallengren's repository](https://github.com/olahallengren/sql-server-maintenance-solution).

@@ -21,3 +21,5 @@ The DBCC command comes with a set of repair options but these should be used as 
 Generally, the integrity of a database should be checked regularly to make sure that corruption is detected while there is still a good backup around.
 
 See [MSSQLTip's article](https://www.mssqltips.com/sqlservertip/4381/sql-server-dbcc-checkdb-overview/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql?view=sql-server-ver15) for more information.
+
+For a ready-made, good and free maintenance solution, see [Ola Hallengren's repository](https://github.com/olahallengren/sql-server-maintenance-solution).
