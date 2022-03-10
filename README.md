@@ -26,6 +26,8 @@ Table of contents:
 - [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
 - [Update Statistics](T-SQL/update-statistics.md)
 
+See also the list of resources that I have compiled: [Resources](T-SQL/Resources.md).
+
 ## About
 
 This idea about documenting your learning publicly is inspired by Josh Branchaud's personal [TIL repository](https://github.com/jbranchaud/til).
