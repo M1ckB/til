@@ -13,5 +13,6 @@ When learning about T-SQL and SQL Server in general, the following list of resou
 - Documentation:
   - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15)
 - Sites:
+  - [dba.stackexchange](https://dba.stackexchange.com/)
   - [Red Gate](https://www.red-gate.com/simple-talk/)
   - [SQLShack](https://www.sqlshack.com/)
