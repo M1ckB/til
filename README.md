@@ -46,6 +46,9 @@ When learning about SQL Server in general, the following list of resources has h
   - [SQLShack](https://www.sqlshack.com/)
 - Documentation:
   - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15)
+- References:
+  - [Execution Plan Reference](https://sqlserverfast.com/epr/)
+  - [Wait Types Library](https://www.sqlskills.com/help/waits/)
 - Slack:
   - [SQL Server Community](https://sqlcommunity.slack.com/) (for an instant invite, go to [dbatools](https://dbatools.io/slack/))
 - Q&A:
