@@ -15,7 +15,7 @@ The `WITH NO_INFOMSGS` option can be used to suppress output messages.
 To clear the plan cache for a specific database, e.g. `AdventureWorks`, use the following command:
 
 ``` sql
-DECLARE @db int = DB_ID('AdventureWorks');
+DECLARE @db int = DB_ID(N'AdventureWorks');
 DBCC FLUSHPROCINDB (@db);
 ```
 
