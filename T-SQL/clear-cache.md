@@ -4,13 +4,13 @@ SQL Server stores query plans in the query plan cache. This way SQL Server can r
 
 Sometimes it can be beneficial to clear the cache, e.g. in a development environment. SQL Server has several Database Console Commands (DBCC) to do this.
 
-The following command can be used to clear the entire plan cache (but also to clear a specific plan or a resource pool):
+The following command can be used to clear the entire plan cache:
 
 ``` sql
 DBCC FREEPROCCACHE;
 ```
 
-The `WITH NO_INFOMSGS` option can be used to suppress output messages.
+The `WITH NO_INFOMSGS` option can be used to suppress output messages. The command can also be used to clear a specific plan or a resource pool.
 
 To clear the plan cache for a specific database, e.g. `AdventureWorks`, use the following command:
 
