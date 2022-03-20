@@ -9,7 +9,7 @@ SQL Server automatically update statistics but sometimes this isn't sufficient t
 The stastics SQL Server maintains, e.g. for index `IX_dbo_test` on table `dbo.test`, can be seen by using the following command:
 
 ``` sql
-DBCC SHOW_STATISTICS ("dbo.test", "IX_dbo_test"); 
+DBCC SHOW_STATISTICS(N'dbo.test', N'IX_dbo_test'); 
 ```
 
 Updating statistics for an entire table or a specific index or column on a table can be done using the following command:
