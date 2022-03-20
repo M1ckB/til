@@ -5,7 +5,7 @@ SQL Server has a Database Console Command (DBCC) that checks the physical and lo
 Use the query below to see when the last integrity check was run on e.g. the database `AdventureWorks`:
 
 ``` sql
-DBCC DBINFO('AdventureWorks') WITH TABLERESULTS;
+DBCC DBINFO(N'AdventureWorks') WITH TABLERESULTS;
 ```
 
 The value `dbi_dbccLastKnownGood` will reveal the date and time.
@@ -13,7 +13,7 @@ The value `dbi_dbccLastKnownGood` will reveal the date and time.
 To check the integrity of a database, run the following query:
 
 ``` sql
-DBCC CHECKDB('AdventureWorks');
+DBCC CHECKDB(N'AdventureWorks');
 ```
 
 The DBCC command comes with a set of repair options but these should be used as a last resort. Instead, the last good backup should be used.
