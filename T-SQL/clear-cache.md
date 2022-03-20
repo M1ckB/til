@@ -16,7 +16,7 @@ To clear the plan cache for a specific database, e.g. `AdventureWorks`, use the 
 
 ``` sql
 DECLARE @db int = DB_ID(N'AdventureWorks');
-DBCC FLUSHPROCINDB (@db);
+DBCC FLUSHPROCINDB(@db);
 ```
 
 See [MSSQLTip's article](https://www.mssqltips.com/sqlservertip/4714/different-ways-to-flush-or-clear-sql-server-cache/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-freeproccache-transact-sql?view=sql-server-ver15) for more information.
