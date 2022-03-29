@@ -40,6 +40,8 @@ WHERE OBJECTPROPERTY(ix.[OBJECT_ID], 'IsUserTable') = 1
 ORDER BY (ixus.user_seeks + ixus.user_scans + ixus.user_lookups);
 ```
 
+Be aware, the *usage stats* only tells about operations (and not e.g. number of rows) that appeared in query plans. With this in mind, the usage stats are a perfect tool to get an overview of index usage and maintenance.
+
 Rules of thumb:
 
 - An index with usage stats containing many zero values means that the index isn't being used (very much) and the gain of having it is small. Moreover, if the index is being modified a lot means that the cost of maintaining the index is relatively big. This makes the index a good candidate for being dropped
@@ -47,6 +49,6 @@ Rules of thumb:
 - An index with a large number of *lookups* means that the index should be altered to include the most frequently looked up columns
 - A clustered index with a large number of *scans* means that it can be efficient to create a non-clustered index to cover the queries (unless the table is small)
 
-**Keep in mind that the statistics are flushed when the SQL Server service is restarted.**
+**Keep in mind that the *usage stats* are reset when the SQL Server is restarted while the *operational stats* are reset whenever the metadata is brought in and out of the metadata cache.**
 
 See [SQLShack's article](https://www.sqlshack.com/gathering-sql-server-indexes-statistics-and-usage-information/) or Microsoft's documentation on [index usage stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-usage-stats-transact-sql?view=sql-server-ver15) or [index operational stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-operational-stats-transact-sql?view=sql-server-ver15) for more information.
