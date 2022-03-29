@@ -34,6 +34,7 @@ When learning about SQL Server in general, the following list of resources has h
 
 - Blogs:
   - [Brent Ozar](https://www.brentozar.com/)
+  - [Erik Darling](https://www.erikdarlingdata.com/)
   - [Erin Stellato](https://www.sqlskills.com/blogs/erin/)
   - [Erland Sommarskog](https://www.sommarskog.se/)
   - [Grant Fritchey](https://www.scarydba.com/)
