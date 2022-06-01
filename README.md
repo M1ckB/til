@@ -34,6 +34,7 @@ Table of contents:
 When learning about SQL Server in general, the following list of resources has helped and inspired me:
 
 - Blogs:
+  - [Aaron Bertrand](https://sqlblog.org/)
   - [Brent Ozar](https://www.brentozar.com/)
   - [Erik Darling](https://www.erikdarlingdata.com/)
   - [Erin Stellato](https://www.sqlskills.com/blogs/erin/)
