@@ -28,7 +28,7 @@ The `HASHBYTES` function computes a hash value over an expression using a speici
 
 ``` sql
 SELECT
-    HASHBYTES('SHA2_256', column1) AS hsh
+    HASHBYTES('SHA2_256', col) AS hsh
 FROM dbo.table
 ```
 
