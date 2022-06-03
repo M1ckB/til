@@ -23,6 +23,7 @@ Table of contents:
 - [Clear Cache](T-SQL/clear-cache.md)
 - [Database Integrity](T-SQL/database-integrity.md)
 - [Error Handling](T-SQL/error-handling.md)
+- [Hashing](T-SQL/hashing.md)
 - [Index Fragmentation](T-SQL/index-fragmentation.md)
 - [Index Usage](T-SQL/index-usage.md)
 - [Missing Index](T-SQL/missing-index.md)
