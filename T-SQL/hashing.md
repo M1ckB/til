@@ -34,6 +34,6 @@ FROM dbo.table
 
 Either *SHA2_256* or *SHA2_512* can be used as algorithm. The function is not as fast as `CHECKSUM` but will be more sensitive to changes and therefore better to use if precision is important.
 
-The function will accept only varchar, nvarchar or varbinary as its input. Therefore, in order to hash a table row all columns must be converted to character strings and be concatenated. The output of the function is varbinary and will take up either 32 or 64 bytes depending on the algorithm.
+The function will accept only varchar, nvarchar or varbinary as its input. Therefore, all columns must be converted to character strings and be concatenated in order to hash a table row. The output of the function is varbinary and will take up either 32 or 64 bytes depending on the algorithm.
 
 See Microsoft's documentation on the [CHECKSUM](https://docs.microsoft.com/en-us/sql/t-sql/functions/checksum-transact-sql?view=sql-server-ver16) and [HASHBYTES](https://docs.microsoft.com/en-us/sql/t-sql/functions/hashbytes-transact-sql?view=sql-server-ver16) functions for more information.
