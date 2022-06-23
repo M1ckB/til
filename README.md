@@ -22,6 +22,7 @@ Table of contents:
 - [Backup and Restore](T-SQL/backup-and-restore.md)
 - [Clear Cache](T-SQL/clear-cache.md)
 - [Database Integrity](T-SQL/database-integrity.md)
+- [Detach and Attach](T-SQL/detach-and-attach.md)
 - [Error Handling](T-SQL/error-handling.md)
 - [Hashing](T-SQL/hashing.md)
 - [Index Fragmentation](T-SQL/index-fragmentation.md)
