@@ -21,6 +21,7 @@ Options can be added by adding `WITH` at the end of the statement and separating
 - `DIFFERENTIAL`: Creates a partial backup of a database
 - `CHECKSUM`: Verifies that no corruption has happened to any of the pages during read/write
 - `INIT`: Creates a new backup (by default, backups will be appended to a file)
+- `COPY_ONLY`: Creates a backup that is independent of the sequence of conventional backups. This is useful if a backup is needed for a special purpose, e.g. a test environment
 
 ## Restore
 
