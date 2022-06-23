@@ -24,4 +24,4 @@ CREATE DATABASE myDb ON
 FOR ATTACH;
 ```
 
-See [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-detach-and-attach-sql-server?view=sql-server-ver16) and this [DBA StackExchange post](https://dba.stackexchange.com/questions/11177/attach-detach-vs-backup-restore) for more information.
+See [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-detach-and-attach-sql-server?view=sql-server-ver16) and this [DBA Stack Exchange post](https://dba.stackexchange.com/questions/11177/attach-detach-vs-backup-restore) for more information.

@@ -35,6 +35,6 @@ When making decisions about index creations, consider the following questions:
 
 For more information, see [SQLShack's article](https://www.sqlshack.com/collecting-aggregating-analyzing-missing-sql-server-index-stats/) or Microsoft's documentation on DMVs related to missing indexes:
 
-- [sys.dm_db_missing_index_groups](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-groups-transact-sql?view=sql-server-ver15)
-- [sys.dm_db_missing_index_group_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-transact-sql?view=sql-server-ver15)
-- [sys.dm_db_missing_index_details](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql?view=sql-server-ver15)
+- [sys.dm_db_missing_index_groups](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-groups-transact-sql?view=sql-server-ver16)
+- [sys.dm_db_missing_index_group_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-transact-sql?view=sql-server-ver16)
+- [sys.dm_db_missing_index_details](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql?view=sql-server-ver16)

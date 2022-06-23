@@ -26,6 +26,6 @@ Instead of specifying a specific index, the `ALL` option can be used to reorgani
 
 Generally, handling index fragmentation should be part of a maintenance plan.
 
-For more information, check out [SQLShack's article](https://www.sqlshack.com/maintaining-sql-server-indexes/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver15).
+For more information, check out [SQLShack's article](https://www.sqlshack.com/maintaining-sql-server-indexes/) or [Microsoft's documentation](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-ver16).
 
 For a ready-made, good and free maintenance solution, see [Ola Hallengren's repository](https://github.com/olahallengren/sql-server-maintenance-solution).
