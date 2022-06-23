@@ -1,6 +1,8 @@
 # Missing Index
 
-SQL Server does, during the process of executing a query, record if it would benefit from an index. The information is gathered and can be retrieved via SQL Servervs Dynamic Management Views (DMVs): `sys.dm_db_missing_index_groups` (index handle), `sys.dm_db_missing_index_group_stats` (index statistics) and `sys.dm_db_missing_index_details` (table and column details). This information is crucial in determining which indexes are needed to secure efficient queries and satisfy production needs.
+SQL Server does, during the process of executing a query, record if it would benefit from an index. The information is gathered and can be retrieved via SQL Servervs Dynamic Management Views (DMVs): `sys.dm_db_missing_index_groups` (index handle), `sys.dm_db_missing_index_group_stats` (index statistics) and `sys.dm_db_missing_index_details` (table and column details).
+
+This information is useful in determining which indexes are needed to secure efficient queries and satisfy production needs but it is, however, only a byproduct of SQL Server's execution plan compilation and therefore not perfect. It is up to us to judge if the suggestions are sensible.
 
 The following query will retrieve information about missing indexes:
 
