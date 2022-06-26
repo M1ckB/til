@@ -2,7 +2,7 @@
 
 > Today I Learned
 
-A collection of small things I learn on a day-to-day basis using different programming languages related to SQL Server. I write these useful code snippets down to help me understand and remember them.
+A collection of small things I learn on a day-to-day basis using different programming languages related to SQL Server. I write these useful techniques and code snippets down to help me understand and remember them.
 
 Table of contents:
 
@@ -51,7 +51,7 @@ When learning about SQL Server in general, the following list of resources has h
   - [SQL Server Central](https://www.sqlservercentral.com/)
   - [SQLShack](https://www.sqlshack.com/)
 - Documentation:
-  - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15)
+  - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16)
 - References:
   - [Execution Plan Reference](https://sqlserverfast.com/epr/)
   - [Wait Types Library](https://www.sqlskills.com/help/waits/)
