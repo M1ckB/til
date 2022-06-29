@@ -6,7 +6,7 @@ In database systems error handling is also *transaction handling* since we want 
 
 In SQL Server error handling in a stored procedure is done by using a TRY-CATCH block. If an error occurs in the TRY block, the execution will be transferred to the CATCH block:
 
-``` sql
+```sql
 BEGIN TRY
     <database modification(s)>
 END TRY
@@ -23,7 +23,7 @@ Error handling should always perform three actions:
 
 Summing up the aforementioned points, a simple pattern for error handling in a stored procedure is shown below:
 
-``` sql
+```sql
 CREATE errorHandlingPattern AS 
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
