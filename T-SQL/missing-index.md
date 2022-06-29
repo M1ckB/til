@@ -6,7 +6,7 @@ This information is useful in determining which indexes are needed to secure eff
 
 The following query will retrieve information about missing indexes:
 
-``` sql
+```sql
 SELECT
     db.[name] AS [database],
     d.statement AS [table],
