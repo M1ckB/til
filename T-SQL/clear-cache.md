@@ -6,7 +6,7 @@ Sometimes it can be beneficial to clear the cache, e.g. in a development environ
 
 The following command can be used to clear the entire plan cache:
 
-``` sql
+```sql
 DBCC FREEPROCCACHE;
 ```
 
@@ -14,7 +14,7 @@ The `WITH NO_INFOMSGS` option can be used to suppress output messages. The comma
 
 To clear the plan cache for a specific database, e.g. `AdventureWorks`, use the following command:
 
-``` sql
+```sql
 DECLARE @db int = DB_ID(N'AdventureWorks');
 DBCC FLUSHPROCINDB(@db);
 ```
