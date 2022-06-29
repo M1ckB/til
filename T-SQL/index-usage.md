@@ -4,7 +4,7 @@ SQL Server has two Dynamic Management Views (DMVs) that track the usage of index
 
 While there are a lot of useful statistics in the DMVs, the query below only includes the most fundamental ones for the current database:
 
-``` sql
+```sql
 WITH pages AS (
     -- Get page count
     SELECT
