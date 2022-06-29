@@ -4,14 +4,14 @@
 
 To create a full backup of a database (e.g. `myDb`) on SQL Server, the following command can be used:
 
-``` sql
+```sql
 BACKUP DATABASE myDb
 TO DISK = N'location\myDb.bak';
 ```
 
 The log can be backed up with the following command:
 
-``` sql
+```sql
 BACKUP LOG myDb
 TO DISK = N'location\myDb.log';
 ```
@@ -33,21 +33,21 @@ The restore process:
 
 Get an overview of a stacked file using the following command:
 
-``` sql
+```sql
 RESTORE FILELISTONLY
 FROM DISK = N'location\myDb.bak';
 ```
 
 Further details can be found using:
 
-``` sql
+```sql
 RESTORE HEADERONLY
 FROM DISK = N'location\myDb.bak';
 ```
 
 When restoring a full backup (with file names matching the `.mdf` and `.ldf` files of the destination database), use:
 
-``` sql
+```sql
 RESTORE DATABASE myDb
 FROM DISK = N'location\myDb.bak'
 WITH REPLACE;
@@ -59,7 +59,7 @@ The `REPLACE` option is only used when restoring a full backup and not e.g. a pa
 
 Restore transaction log backups using:
 
-``` sql
+```sql
 RESTORE LOG myDb
 FROM DISK = N'location\myDb.log';
 ```
@@ -68,7 +68,7 @@ FROM DISK = N'location\myDb.log';
 
 When the database has been rolled forward to the desired point in time, the restore process can be completed:
 
-``` sql
+```sql
 RESTORE DATABASE myDb
 WITH RECOVERY;
 ```
