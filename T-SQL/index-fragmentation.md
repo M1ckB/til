@@ -4,7 +4,7 @@ SQL Server has a dedicated Dynamic Management View (DMV) that shows index fragme
 
 Run the following query to get an overview of indexes that has 1.000 pages or more and some degree of fragmentation:
 
-``` sql
+```sql
 SELECT
     s.[name] AS [schema],
     t.[name] AS  [table],
