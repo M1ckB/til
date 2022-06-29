@@ -27,6 +27,7 @@ Table of contents:
 - [Hashing](T-SQL/hashing.md)
 - [Index Fragmentation](T-SQL/index-fragmentation.md)
 - [Index Usage](T-SQL/index-usage.md)
+- [Job Information](T-SQL/job-information.md)
 - [Missing Index](T-SQL/missing-index.md)
 - [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
 - [Update Statistics](T-SQL/update-statistics.md)
