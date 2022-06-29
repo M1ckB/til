@@ -14,7 +14,7 @@ SQL Server has two built-in functions for hashing, `CHECKSUM` (or `BINARY_CHECKS
 
 The `CHECKSUM` function computes a checksum value over a table row or expression, e.g.:
 
-``` sql
+```sql
 SELECT
     CHECKSUM(*) AS chksum
 FROM dbo.table
@@ -26,7 +26,7 @@ The function is fast but there is a small chance that the checksum will not chan
 
 The `HASHBYTES` function computes a hash value over an expression using a speicified algorithm, e.g.
 
-``` sql
+```sql
 SELECT
     HASHBYTES('SHA2_256', col) AS hsh
 FROM dbo.table
