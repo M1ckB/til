@@ -8,7 +8,7 @@ It is recommended to *reorganize* an index if the fragmentation exceeds 5 percen
 
 To reorganize an index, e.g. `IX_dbo_test` on table `dbo.test`, the following statement can be used:
 
-``` sql
+```sql
 ALTER INDEX IX_dbo_test 
 ON dbo.test
 REORGANIZE;
@@ -16,7 +16,7 @@ REORGANIZE;
 
 To rebuild an index, the following statement can be used:
 
-``` sql
+```sql
 ALTER INDEX IX_dbo_test 
 ON dbo.test
 REBUILD;
