@@ -10,13 +10,13 @@ Detaching and attaching is only done in exceptional circumstances whereas backup
 
 To detach a database, e.g. `myDb`, the following system stored procedure can be used:
 
-``` sql
+```sql
 EXECUTE sp_detach_db @dbname = N'myDb';
 ```
 
 The detached database can be reattached using the following command:
 
-``` sql
+```sql
 CREATE DATABASE myDb ON
 (FILENAME = N'location\myDb_1.mdf'),
 (FILENAME = N'location\myDb_2.ndf'),
