@@ -52,6 +52,9 @@ When learning about SQL Server in general, the following list of resources has h
   - [Red Gate](https://www.red-gate.com/simple-talk/)
   - [SQL Server Central](https://www.sqlservercentral.com/)
   - [SQLShack](https://www.sqlshack.com/)
+- Conferences:
+  - [PASS Summit](https://passdatacommunitysummit.com/sessions/video-library/)
+  - [SQLBits](https://arcade.sqlbits.com/sessions)
 - Documentation:
   - [Microsoft's documentation on SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16)
 - References:
