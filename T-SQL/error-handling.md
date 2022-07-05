@@ -24,7 +24,7 @@ Error handling should always perform three actions:
 Summing up the aforementioned points, a simple pattern for error handling in a stored procedure is shown below:
 
 ```sql
-CREATE errorHandlingPattern AS 
+CREATE PROCEDURE errorHandlingPattern AS 
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
     BEGIN TRANSACTION
