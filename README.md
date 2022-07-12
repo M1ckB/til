@@ -25,6 +25,7 @@ Table of contents:
 - [Dependencies](T-SQL/dependencies.md)
 - [Detach and Attach](T-SQL/detach-and-attach.md)
 - [Error Handling](T-SQL/error-handling.md)
+- [Extended Properties](T-SQL/extended-properties.md)
 - [Hashing](T-SQL/hashing.md)
 - [Index Fragmentation](T-SQL/index-fragmentation.md)
 - [Index Usage](T-SQL/index-usage.md)
