@@ -4,9 +4,9 @@ In SQL Server it is possible to document database objects using a feature called
 
 Extended properties are metadata associated with an object. An object can have multiple extended properties. They will all be backed up and restored along with the database holding the objects.
 
-All extended properties can be accessed via the catalog view `sys.extended_properties`. They can also be accessed via the built-in table-valued function `sys.fn_listextendedproperty` which will list extended properties based on filter criteria.
-
 Generally, extended properties have a name, a value and some level parameters pointing to a specific object. While the user can choose the name of the property, commonly used names exists for describing an object ("MS_Description") and versioning ("Version" and "VersionDate").
+
+All extended properties can be accessed via the catalog view `sys.extended_properties`. They can also be accessed via the built-in table-valued function `sys.fn_listextendedproperty` which will list extended properties based on filter criteria.
 
 Too add, update or drop an extended property, the following stored procedures can be used:
 
