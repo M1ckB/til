@@ -16,7 +16,7 @@ BACKUP LOG myDb
 TO DISK = N'location\myDb.log';
 ```
 
-Options can be added by adding `WITH` at the end of the statement and separating options using comma as delimiter. Some especially useful options are:
+Options can be added by adding `WITH` at the end of the statement and separating options using comma as delimiter. Some of the especially useful options are:
 
 - `DIFFERENTIAL`: Creates a partial backup of a database
 - `CHECKSUM`: Verifies that no corruption has happened to any of the pages during read/write
