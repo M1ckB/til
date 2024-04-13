@@ -23,23 +23,23 @@ Table of contents:
 
 ### Python
 
-- [[the-zen-of-python]]
+- [The Zen of Python](Python/the-zen-of-python.md)
 
 ### T-SQL
 
-- [[backup-and-restore]]
-- [[clear-cache]]
-- [[database-integrity]]
-- [[dependencies]]
-- [[detach-and-attach]]
-- [[error-handling]]
-- [[extended-properties]]
-- [[hashing]]
-- [[index-fragmentation]]
-- [[index-usage]]
-- [[job-information]]
-- [[missing-index]]
-- [[reorganize-or-rebuild-index]]
-- [[sp_whoisactive]]
-- [[update-statistics]]
-- [[window-functions]]
+- [Backup and Restore](T-SQL/backup-and-restore.md)
+- [Clear Cache](T-SQL/clear-cache.md)
+- [Database Integrity](T-SQL/database-integrity.md)
+- [Dependencies](T-SQL/dependencies.md)
+- [Detach and Attach](T-SQL/detach-and-attach.md)
+- [Error Handling](T-SQL/error-handling.md)
+- [Extended Properties](T-SQL/extended-properties.md)
+- [Hashing](T-SQL/hashing.md)
+- [Index Fragmentation](T-SQL/index-fragmentation.md)
+- [Index Usage](T-SQL/index-usage.md)
+- [Job Information](T-SQL/job-information.md)
+- [Missing Index](T-SQL/missing-index.md)
+- [Reorganize or Rebuild Index](T-SQL/reorganize-or-rebuild-index.md)
+- [`sp_WhoIsActive`](T-SQL/sp_whoisactive.md)
+- [Update Statistics](T-SQL/update-statistics.md)
+- [Window Functions](T-SQL/window-functions.md)
