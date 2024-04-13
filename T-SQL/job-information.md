@@ -4,13 +4,13 @@ The following system stored procedure can be used to retrieve information about 
 
 ```sql
 EXECUTE msdb.dbo.sp_help_job
-	@job_name = 'jobNo1',
-	@job_id = 1;
+    @job_name = 'jobNo1',
+    @job_id = 1;
 ```
 
 Either the job name or the job id can be provided. If neither job name or id is provided, then information about all jobs currently defined in the `msdb` database will be returned.
 
-There are also other options for filtering out specific types of jobs. A few useful ones are the parameters `@enabled` and `@execution_status`. 
+There are also other options for filtering out specific types of jobs. A few useful ones are the parameters `@enabled` and `@execution_status`.
 
 The procedure returns four result sets with information about different aspects of a job: job (`JOB`), schedule (`SCHEDULES`), job step (`STEPS`) and target (`TARGETS`). Using the `@job_aspect` parameter, it is possible to control which of the four result sets should be returned.
 
