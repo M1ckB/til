@@ -15,7 +15,7 @@ Table of contents:
 
 ### AI
 
-- [[chain-of-thought]]
+- [Chain of Thought](AI/chain-of-thought.md)
 - [[principles-for-crafting-prompts]]
 - [[rewriting-questions]]
 - [[system-messages]]
