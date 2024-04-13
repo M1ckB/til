@@ -16,10 +16,10 @@ Table of contents:
 ### AI
 
 - [Chain of Thought](AI/chain-of-thought.md)
-- [[principles-for-crafting-prompts]]
-- [[rewriting-questions]]
-- [[system-messages]]
-- [[use-cases-for-coding]]
+- [Principles for Crafting Prompts](AI/principles-for-crafting-prompts.md)
+- [Rewriting Questions](AI/rewriting-questions.md)
+- [System Messages](AI/system-messages.md)
+- [Use Cases for Coding](AI/use-cases-for-coding.md)
 
 ### Python
 
