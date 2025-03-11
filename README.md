@@ -24,7 +24,7 @@ Table of contents:
 
 ### Bash
 
-- 
+- [Basics](Bash/basics.md)
 
 ### Python
 
