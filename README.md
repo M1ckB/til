@@ -8,6 +8,7 @@ Table of contents:
 
 - [Categories](#categories)
   - [AI](#ai)
+  - [Bash](#bash)
   - [Python](#python)
   - [T-SQL](#t-sql)
 
@@ -20,6 +21,10 @@ Table of contents:
 - [Rewriting Questions](AI/rewriting-questions.md)
 - [System Messages](AI/system-messages.md)
 - [Use Cases for Coding](AI/use-cases-for-coding.md)
+
+### Bash
+
+- 
 
 ### Python
 
