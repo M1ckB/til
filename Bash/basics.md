@@ -2,37 +2,36 @@
 
 ## Navigation
 
-You can print the current directory by using the followin command:
+Print current directory:
 
 ```bash
 pwd
 ```
-
-You can list folders and files in your current directory by usng the following command:
+List files and folders in current directory:
 
 ```bash
 ls
 ```
 
-You can change directory by issuing the following command:
+Change directory:
 
 ```bash
-cd <path>
+cd path/to/file
 ```
 
-To read an entire file:
+Read an entire file:
 
 ```bash
-cat <file>
+cat path/to/file
 ```
 
-To read a file bit by bit:
+Read a file bit by bit:
 
 ```bash
-less <file>
+less path/to/file
 ```
 
-The following commands can be used with `less`:
+Use the following commands with `less`:
 
 - `Enter`: Jump to next line
 - `Space`: Jump to next page
